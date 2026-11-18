@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f7f8f5"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%23151916%27/%3E%3Cpath d=%27M32 12l16 6v12c0 11-7 19-16 22-9-3-16-11-16-22V18z%27 fill=%27none%27 stroke=%27%23b8f36a%27 stroke-width=%274%27/%3E%3C/svg%3E"><meta name="description" content="Ahmed Mahmoud Khalifa — Cybersecurity Engineer, SOC Analyst, DFIR practitioner and security automation enthusiast.">
+<title>Ahmed Mahmoud Khalifa | Cybersecurity Portfolio</title>
+<style>
+:root{--white:#f7f8f5;--paper:#fff;--ink:#151916;--muted:#69736c;--green:#168447;--lime:#b8f36a;--line:#dfe5df;--shadow:0 24px 70px #16251b18}
+*{box-sizing:border-box}html{scroll-behavior:smooth}html{background:var(--white)}body{margin:0;background:transparent;color:var(--ink);font:15px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}a:hover{color:var(--green)}button{font:inherit}.wrap{width:min(1160px,91%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:#ffffffdf;backdrop-filter:blur(16px);border-bottom:1px solid #e7ebe7}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{font-weight:850;letter-spacing:-.04em}.brand span{color:var(--green)}.links{display:flex;gap:23px;align-items:center;font-size:12px;font-weight:650;color:#505b53}.links a:last-child{background:var(--ink);color:white;padding:10px 16px;border-radius:30px}
+.hero{min-height:650px;display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:30px;padding:55px 0 75px;position:relative}.eyebrow{font-size:11px;letter-spacing:.19em;text-transform:uppercase;color:var(--green);font-weight:800}.hero h1{font-size:clamp(48px,7.3vw,94px);line-height:.94;letter-spacing:-.075em;margin:18px 0}.hero h1 span{color:var(--green)}.role{font-size:clamp(16px,2vw,21px);font-weight:600;max-width:580px}.intro{color:var(--muted);max-width:570px;margin:20px 0 28px}.actions{display:flex;gap:11px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:9px;padding:12px 19px;border-radius:30px;border:1px solid var(--ink);font-size:12px;font-weight:750;transition:.25s}.btn.dark{background:var(--ink);color:white}.btn:hover{transform:translateY(-3px);box-shadow:0 10px 25px #101a1320}.hero-visual{position:relative;min-height:510px;display:flex;align-items:end;justify-content:center;perspective:1100px}.portrait-wrap{width:min(100%,475px);height:520px;position:relative;display:flex;align-items:end;justify-content:center;transform-style:preserve-3d;transition:transform .18s ease-out}.portrait-wrap:before{content:"";position:absolute;width:88%;height:88%;bottom:0;border-radius:48% 48% 20px 20px;background:linear-gradient(145deg,#e6ece6,#d9e4da);transform:translateZ(-35px) rotate(-5deg)}.portrait{position:relative;z-index:2;width:100%;height:100%;object-fit:contain;object-position:center bottom;filter:grayscale(100%) contrast(1.04);transform:translateZ(35px);mask-image:linear-gradient(to bottom,#000 0 90%,transparent 100%)}.float-card{position:absolute;z-index:4;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);padding:12px 15px;border-radius:12px;font-size:11px;font-weight:700}.float-card small{display:block;color:var(--muted);font-weight:500}.float-card.one{left:-4%;top:26%;transform:translateZ(65px) rotate(-4deg)}.float-card.two{right:-2%;bottom:18%;transform:translateZ(85px) rotate(4deg)}.green-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--green);margin-right:7px}
+.ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:17px 0;color:#59645c;font-size:11px;letter-spacing:.12em;text-transform:uppercase;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+section{padding:100px 0;scroll-margin-top:75px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:32px}.kicker{font-size:11px;color:var(--green);font-weight:850;letter-spacing:.15em;text-transform:uppercase}.section-head h2{font-size:clamp(32px,5vw,54px);letter-spacing:-.06em;line-height:1;margin:9px 0 0}.section-head p{max-width:390px;color:var(--muted);font-size:13px;margin:0}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.panel{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:28px;box-shadow:var(--shadow)}.panel p{color:var(--muted)}.statline{display:flex;gap:24px;flex-wrap:wrap;margin-top:22px}.stat strong{font-size:27px;display:block;letter-spacing:-.05em}.stat span{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
+.project-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.project{background:var(--paper);border:1px solid var(--line);border-radius:18px;overflow:visible;box-shadow:var(--shadow);transform-style:preserve-3d;transition:transform .25s,box-shadow .25s}.project:hover{box-shadow:0 40px 80px #13251a30}.project-media{border-radius:17px 17px 0 0;height:275px;background:#e9eee9;overflow:hidden;position:relative;display:flex;align-items:center;justify-content:center}.project-media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .55s;filter:saturate(.82)}.project:hover .project-media img{transform:scale(1.045)}.project-media.arch img{object-fit:contain;background:#071322;padding:0}.project-body{padding:24px}.project-title{display:flex;justify-content:space-between;gap:12px;align-items:start}.project h3{font-size:21px;letter-spacing:-.04em;margin:0}.status{font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:var(--green);border:1px solid #b9d8c3;padding:5px 8px;border-radius:30px;white-space:nowrap}.project p{color:var(--muted);font-size:13px}.tags{display:flex;flex-wrap:wrap;gap:6px}.tag{font-size:10px;background:#f0f5f0;color:#28643e;padding:5px 9px;border-radius:30px}
+.visual-placeholder{width:100%;height:100%;padding:22px;display:grid;place-items:center;background:radial-gradient(circle at 70% 25%,#d8eadb,#eaf0e9 60%)}.mini-window{width:88%;background:#fff;border:1px solid #d2ddd3;border-radius:12px;box-shadow:0 18px 40px #1b39251c;padding:15px;transform:rotate(-3deg)}.mini-bar{height:7px;width:42%;background:#168447;border-radius:10px;margin-bottom:14px}.mini-row{display:flex;gap:8px;margin:9px 0}.mini-box{height:42px;flex:1;background:#eef4ef;border-radius:6px}.mini-chart{height:75px;background:linear-gradient(160deg,transparent 45%,#168447 46% 48%,transparent 49%),linear-gradient(20deg,transparent 50%,#9ccfa9 51% 53%,transparent 54%);border:1px solid #e1e9e2;border-radius:6px;margin-top:10px}
+.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.skillbox{background:white;border:1px solid var(--line);border-radius:13px;padding:19px}.skillbox h3{font-size:13px;margin:0 0 12px}.skillbox p{font-size:11px;color:var(--muted);margin:0}
+.timeline{display:grid;grid-template-columns:1fr 1fr;gap:14px}.experience{background:white;border:1px solid var(--line);border-radius:14px;padding:22px}.experience h3{margin:0;font-size:16px}.experience .meta{color:var(--green);font-size:11px;font-weight:700}.experience p{color:var(--muted);font-size:12px}
+.contact-box{background:var(--ink);color:white;border-radius:22px;padding:42px;display:flex;align-items:center;justify-content:space-between;gap:25px}.contact-box h2{font-size:clamp(30px,5vw,52px);line-height:1;margin:10px 0}.contact-box p{color:#b7c3ba;font-size:13px}.contact-box .btn{background:var(--lime);border-color:var(--lime);color:#132016}.social-links{display:flex;flex-direction:column;align-items:flex-start;gap:10px;margin-top:14px;font-size:13px}.social-links a{color:#fff}.social-links a:hover{color:var(--lime)}.social-links span{color:#b7c3ba;font-size:12px}
+footer{padding:25px 0;color:var(--muted);font-size:11px}.reveal{opacity:0;transform:perspective(1200px) translate3d(0,46px,-60px) rotateX(7deg);transform-origin:50% 100%;transition:opacity .8s,transform 1s cubic-bezier(.2,.8,.2,1)}.reveal.visible{opacity:1;transform:none}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:55px}.hero-visual{min-height:410px}.portrait-wrap{height:420px;max-width:380px}.project-grid,.about-grid,.timeline{grid-template-columns:1fr}.skills{grid-template-columns:1fr 1fr}.section-head{display:block}.section-head p{margin-top:15px}.contact-box{display:block}.contact-box .btn{margin-top:15px}.links{gap:11px}.nav{height:auto;min-height:65px;flex-wrap:wrap;padding:12px 0}}
+@media(max-width:480px){.links{font-size:10px}.skills{grid-template-columns:1fr}.hero h1{font-size:50px}.float-card.one{left:0}.float-card.two{right:0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+/* ===== 3D FINAL TOUCH ===== */
+#bg3d{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;transition:opacity .4s}
+main,nav,footer{position:relative;z-index:1}nav{position:sticky;z-index:30}
+.progress{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--green),var(--lime));z-index:60}
+.links a.active{color:var(--green)}.links a:last-child.active{color:#fff;background:var(--green)}
+.hero h1{transform-style:preserve-3d}.hero h1 span{display:inline-block;background:linear-gradient(100deg,var(--green) 30%,#5fc24a 55%,var(--green) 80%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sheen 6s linear infinite}
+@keyframes sheen{to{background-position:-200% 0}}
+.portrait{filter:grayscale(100%) contrast(1.04) drop-shadow(0 30px 40px #10261a40);transition:filter .6s;mask-image:linear-gradient(to bottom,#000 0 92%,transparent 100%)}
+.portrait-wrap:hover .portrait{filter:grayscale(0) contrast(1.04) drop-shadow(0 34px 46px #10261a50)}
+.portrait-wrap:after{content:"";position:absolute;inset:6% 2% 0;border-radius:50%;border:1px dashed #168447aa;transform:translateZ(-10px) rotateX(68deg);animation:spin 22s linear infinite;pointer-events:none}
+@keyframes spin{to{transform:translateZ(-10px) rotateX(68deg) rotateZ(360deg)}}
+.float-card{backdrop-filter:blur(10px);background:#ffffffe6}
+.float-card.one{animation:bob1 6s ease-in-out infinite}.float-card.two{animation:bob2 7s ease-in-out infinite}
+@keyframes bob1{50%{transform:translateZ(65px) rotate(-4deg) translateY(-12px)}}@keyframes bob2{50%{transform:translateZ(85px) rotate(4deg) translateY(12px)}}
+.ticker{background:#ffffff8c;backdrop-filter:blur(8px)}
+[data-tilt]{transform-style:preserve-3d;will-change:transform;position:relative;transition:transform .6s cubic-bezier(.2,.8,.2,1),box-shadow .35s}
+[data-tilt]:hover{transition:transform .12s ease-out,box-shadow .35s}
+[data-tilt]:after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .3s;background:radial-gradient(420px circle at var(--mx,50%) var(--my,50%),#ffffffaa,transparent 55%);mix-blend-mode:soft-light;transform:translateZ(1px)}
+[data-tilt]:hover:after{opacity:1}
+.project .project-title,.project .tags{transform:translateZ(26px)}.project p{transform:translateZ(14px)}
+.panel h3,.skillbox h3,.experience h3{transform:translateZ(22px)}.stat{transform:translateZ(18px)}
+.panel,.skillbox,.experience{transition-property:transform,box-shadow,border-color}
+.skillbox:hover,.experience:hover,.panel:hover{border-color:#a9d6b7}
+.reveal.visible .project,.reveal.visible .panel,.reveal.visible .skillbox,.reveal.visible .experience{animation:rise 1s cubic-bezier(.2,.8,.2,1) backwards;animation-delay:calc(var(--i,0)*.11s + .15s)}
+@keyframes rise{from{opacity:0;transform:perspective(1000px) translate3d(0,50px,-80px) rotateX(12deg)}}
+.contact-box{position:relative;overflow:hidden;box-shadow:0 40px 90px #10201555}
+.contact-box:before{content:"";position:absolute;right:-90px;top:-90px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#b8f36a55,transparent 65%);filter:blur(4px);animation:bob1 9s ease-in-out infinite}
+.contact-box>*{position:relative}
+@media(max-width:800px){.portrait-wrap:after{display:none}#bg3d{opacity:.38!important}}
+@media(prefers-reduced-motion:reduce){.hero h1 span,.float-card,.portrait-wrap:after,.contact-box:before{animation:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<canvas id="bg3d" aria-hidden="true"></canvas>
+<nav><div class="wrap nav"><a class="brand" href="#home">AHMED<span>.</span>KHALIFA</a><div class="links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div></div></nav>
+<main class="wrap">
+<header class="hero" id="home">
+<div class="reveal"><div class="eyebrow"><span class="green-dot"></span>Cybersecurity &bull; SOC &bull; Security Automation</div><h1>AHMED<br>MAHMOUD<br><span>KHALIFA.</span></h1><div class="role">Cybersecurity Engineer | SOC Analyst | DFIR Practitioner</div><p class="intro">Computer Science and Information graduate focused on SOC operations, SIEM, network security, and ethical hacking. Hands-on experience with Wazuh, OpenSearch, FortiGate, Linux, threat detection, and security automation &mdash; with a strong interest in AI-powered UEBA.</p><div class="actions"><a class="btn dark" href="#projects">Explore My Work</a><a class="btn" href="#contact">Contact me</a></div></div>
+<div class="hero-visual reveal" id="heroVisual"><div class="float-card one"><span class="green-dot"></span>Open to opportunities<small>Cairo, Egypt</small></div><div class="portrait-wrap" id="portraitWrap"><img class="portrait" src="assets/ahmed-khalifa.webp" alt="Ahmed Mahmoud Khalifa" fetchpriority="high"></div><div class="float-card two">SOC / DFIR<small>Think like an attacker. Defend like an analyst.</small></div></div>
+</header>
+<div class="ticker"><span>Security Operations</span><span>Threat Detection</span><span>Digital Forensics</span><span>Ethical Hacking</span><span>AI-powered UEBA</span></div>
+<section id="about" class="reveal"><div class="section-head"><div><div class="kicker">01 / About</div><h2>Curious by nature.<br>Security by design.</h2></div><p>I combine defensive security knowledge with an attacker mindset to understand threats, investigate activity, and build practical security solutions.</p></div><div class="about-grid"><div class="panel" data-tilt><h3>Professional Profile</h3><p>Cybersecurity Engineer with hands-on training and project experience across SOC operations, SIEM, DFIR, network security, Linux hardening, threat hunting, and ethical hacking. Interested in applying machine learning and generative AI to improve security detection and investigation.</p></div><div class="panel" data-tilt><h3>Education</h3><p><strong>Bachelor of Computer Science &mdash; Information Security</strong><br>Faculty of Computers and Information, Suez Canal University<br>Grade: Very Good</p><div class="statline"><div class="stat"><strong>3+</strong><span>Core focus areas</span></div><div class="stat"><strong>2</strong><span>Featured platforms</span></div><div class="stat"><strong>&infin;</strong><span>Learning mindset</span></div></div></div></div></section>
+<section id="projects" class="reveal"><div class="section-head"><div><div class="kicker">02 / Selected work</div><h2>Projects that<br>make an impact.</h2></div><p>A selection of practical security projects and hands-on labs. Each project highlights the tools, workflow, and technical areas explored.</p></div>
+<div class="project-grid">
+<article class="project" data-tilt><div class="project-media arch"><img src="assets/tracemind.webp" alt="SCZone and TraceMind security analytics architecture"></div><div class="project-body"><div class="project-title"><h3>SCZone / TraceMind</h3><span class="status">In development</span></div><p>Security analytics and UEBA platform connecting security telemetry to detection, investigation, and response. Work includes FortiGate and Wazuh event sources, Kafka ingestion design, parsing and normalization, OpenSearch dashboards, UEBA/DFIR workflows, AI-assisted explanation, and SOAR concepts.</p><div class="tags"><span class="tag">Wazuh</span><span class="tag">FortiGate</span><span class="tag">OpenSearch</span><span class="tag">Kafka</span><span class="tag">UEBA</span><span class="tag">DFIR</span><span class="tag">Ollama</span><span class="tag">n8n</span></div></div></article>
+<article class="project" data-tilt><div class="project-media"><img style="object-position:50% 38%" src="assets/soc-monitoring.webp" alt="SOC monitoring and network traffic analysis workspace" loading="lazy"></div><div class="project-body"><div class="project-title"><h3>SOC Monitoring & Traffic Analysis</h3><span class="status">Hands-on labs</span></div><p>Practiced alert triage, log analysis, threat detection, and root-cause investigation. Analyzed Windows and Linux security events and inspected PCAP traffic for suspicious patterns such as brute-force attempts, ARP spoofing, and unusual HTTP activity.</p><div class="tags"><span class="tag">Wazuh</span><span class="tag">Wireshark</span><span class="tag">Sysmon</span><span class="tag">PCAP</span></div></div></article>
+<article class="project" data-tilt><div class="project-media"><img src="assets/web-exploitation.webp" alt="Web exploitation and ethical hacking lab" loading="lazy"></div><div class="project-body"><div class="project-title"><h3>Offensive Security & Web Exploitation</h3><span class="status">Controlled labs</span></div><p>Performed reconnaissance, scanning, and enumeration; practiced web application security testing and OWASP Top 10 concepts; and explored Linux privilege escalation in controlled learning environments.</p><div class="tags"><span class="tag">Kali Linux</span><span class="tag">Nmap</span><span class="tag">Burp Suite</span><span class="tag">TryHackMe</span><span class="tag">OverTheWire</span></div></div></article>
+<article class="project" data-tilt><div class="project-media"><img src="assets/incident-response.webp" alt="Digital forensics and incident response environment" loading="lazy"></div><div class="project-body"><div class="project-title"><h3>Digital Forensics & Incident Response</h3><span class="status">Practical learning</span></div><p>Developed foundational skills in incident response and digital forensics, including reviewing endpoint and system events, collecting investigation evidence, and documenting findings for follow-up analysis.</p><div class="tags"><span class="tag">DFIR</span><span class="tag">Linux</span><span class="tag">Windows</span><span class="tag">Log Analysis</span></div></div></article>
+</div></section>
+<section id="skills" class="reveal"><div class="section-head"><div><div class="kicker">03 / Capabilities</div><h2>Technical toolkit.</h2></div><p>Core technologies and security domains used across training, labs, and project development.</p></div><div class="skills">
+<div class="skillbox" data-tilt><h3>Security Operations</h3><p>SIEM (Wazuh), OpenSearch, Alert Triage, Log Analysis, IOC Analysis, Incident Response, MITRE ATT&CK.</p></div>
+<div class="skillbox" data-tilt><h3>Network & Offensive Security</h3><p>TCP/IP, DNS, DHCP, Packet Analysis, Vulnerability Assessment, Ethical Hacking, OWASP Top 10, Snort IDS/IPS.</p></div>
+<div class="skillbox" data-tilt><h3>Tools & Systems</h3><p>Wireshark, Nmap, Burp Suite, Metasploit (Basic), OpenEDR, Sysmon, tcpdump, AIDE, Kali Linux, Ubuntu, Windows, Docker.</p></div>
+<div class="skillbox" data-tilt><h3>Programming & Automation</h3><p>Python, Bash, n8n, PostgreSQL, Machine Learning fundamentals, LLMs & Generative AI.</p></div>
+</div></section>
+<section id="experience" class="reveal"><div class="section-head"><div><div class="kicker">04 / Experience</div><h2>Where I learned<br>by doing.</h2></div></div><div class="timeline">
+<div class="experience" data-tilt><div class="meta">PRACTICAL PROJECT</div><h3>SCZone &mdash; SOC Environment</h3><p>Hands-on project exposure to security monitoring, FortiGate and Wazuh event sources, OpenSearch dashboards, log analysis, and event correlation.</p></div>
+<div class="experience" data-tilt><div class="meta">OPERATIONS & IT SUPPORT</div><h3>Green Way Shipping Co.</h3><p>Provided first-line IT support, troubleshooting hardware and connectivity issues, coordinating with departments, and maintaining operational documentation.</p></div>
+<div class="experience" data-tilt><div class="meta">CYBERSECURITY TRAINING</div><h3>DigiLians &mdash; Digital Pioneers Initiative</h3><p>Practical training in networking, Linux, cybersecurity fundamentals, ethical hacking, Red and Blue Team techniques, incident response, DFIR, GRC, Active Directory, and Snort.</p></div>
+</div></section>
+<section id="contact" class="reveal"><div class="contact-box"><div><div class="kicker" style="color:var(--lime)">05 / Contact</div><h2>Let's secure<br>what matters.</h2><p>Open to cybersecurity, SOC, and security engineering opportunities.</p></div><div><a class="btn" href="mailto:ahmdkhalifa.2030@gmail.com">Get in Touch</a><div class="social-links"><a href="https://www.linkedin.com/in/ahmedkhalifa2030" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://github.com/ahmedkhalifa-1" target="_blank" rel="noopener">GitHub ↗</a><span>Cairo, Egypt</span></div></div></div></section>
+</main><footer><div class="wrap">&copy; 2026 Ahmed Mahmoud Khalifa &middot; Built with curiosity and a security-first mindset.</div></footer>
+<script src="assets/three.min.js"></script>
+<script>
+/* reveal + stagger */
+document.querySelectorAll('.project-grid,.skills,.timeline,.about-grid').forEach(g=>[...g.children].forEach((c,i)=>c.style.setProperty('--i',i)));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+/* hero portrait tilt */
+const fine=matchMedia('(pointer:fine)').matches, reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const visual=document.getElementById('heroVisual'),portrait=document.getElementById('portraitWrap');
+if(visual&&fine&&!reduce){visual.addEventListener('pointermove',e=>{const r=visual.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;portrait.style.transform=`rotateY(${x*14}deg) rotateX(${-y*10}deg) scale(1.02)`});visual.addEventListener('pointerleave',()=>portrait.style.transform='rotateY(0) rotateX(0) scale(1)')}
+/* card tilt + glare */
+if(fine&&!reduce)document.querySelectorAll('[data-tilt]').forEach(el=>{let raf;
+ el.addEventListener('pointermove',e=>{const r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;cancelAnimationFrame(raf);
+  raf=requestAnimationFrame(()=>{el.style.transform=`perspective(1000px) rotateX(${(.5-y)*7}deg) rotateY(${(x-.5)*9}deg) translateZ(8px)`;el.style.setProperty('--mx',x*100+'%');el.style.setProperty('--my',y*100+'%')})});
+ el.addEventListener('pointerleave',()=>{cancelAnimationFrame(raf);el.style.transform=''})});
+/* scroll progress + active nav */
+const bar=document.getElementById('progress'),links=[...document.querySelectorAll('.links a')];
+const secs=links.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
+function onScroll(){const h=document.documentElement;bar.style.transform=`scaleX(${scrollY/(h.scrollHeight-innerHeight||1)})`;
+ let cur=null;secs.forEach(s=>{if(s.getBoundingClientRect().top<innerHeight*.4)cur=s.id});links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+cur))}
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+/* ===== Three.js: 3D threat-network globe ===== */
+(()=>{
+const canvas=document.getElementById('bg3d');
+if(typeof THREE==='undefined'){canvas.remove();return}
+let renderer;try{renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:true,powerPreference:'low-power'})}catch(e){canvas.remove();return}
+const mobile=innerWidth<800;renderer.setPixelRatio(Math.min(devicePixelRatio||1,1.75));
+const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(45,1,.1,100);camera.position.z=9;
+const globe=new THREE.Group();scene.add(globe);
+const GREEN=0x168447,LIME=0x7ccf3a,RED=0xe5484d;
+const dot=(()=>{const c=document.createElement('canvas');c.width=c.height=64;const g=c.getContext('2d'),gr=g.createRadialGradient(32,32,0,32,32,32);gr.addColorStop(0,'#fff');gr.addColorStop(.45,'#fff');gr.addColorStop(1,'rgba(255,255,255,0)');g.fillStyle=gr;g.fillRect(0,0,64,64);return new THREE.CanvasTexture(c)})();
+/* fibonacci sphere nodes */
+const N=mobile?80:150,R=2.6,P=[];
+for(let i=0;i<N;i++){const y=1-i/(N-1)*2,r=Math.sqrt(1-y*y),t=i*2.399963;P.push(new THREE.Vector3(Math.cos(t)*r*R,y*R,Math.sin(t)*r*R))}
+const lv=[];for(let i=0;i<N;i++)for(let j=i+1;j<N;j++)if(P[i].distanceTo(P[j])<(mobile?1.5:1.18))lv.push(P[i].x,P[i].y,P[i].z,P[j].x,P[j].y,P[j].z);
+const lg=new THREE.BufferGeometry();lg.setAttribute('position',new THREE.Float32BufferAttribute(lv,3));
+globe.add(new THREE.LineSegments(lg,new THREE.LineBasicMaterial({color:GREEN,transparent:true,opacity:.3})));
+const pg=new THREE.BufferGeometry().setFromPoints(P);
+globe.add(new THREE.Points(pg,new THREE.PointsMaterial({color:GREEN,size:.16,map:dot,transparent:true,depthWrite:false,alphaTest:.02})));
+/* core + rings */
+const core=new THREE.Mesh(new THREE.IcosahedronGeometry(1.45,1),new THREE.MeshBasicMaterial({color:LIME,wireframe:true,transparent:true,opacity:.22}));globe.add(core);
+const inner=new THREE.Mesh(new THREE.IcosahedronGeometry(.7,0),new THREE.MeshBasicMaterial({color:GREEN,wireframe:true,transparent:true,opacity:.5}));globe.add(inner);
+const rings=[0,1].map(k=>{const m=new THREE.Mesh(new THREE.TorusGeometry(3.5+k*.45,.012,6,180),new THREE.MeshBasicMaterial({color:k?LIME:GREEN,transparent:true,opacity:.45}));m.rotation.x=1.2+k*.5;m.rotation.y=k*.8;globe.add(m);return m});
+/* orbiting satellites */
+const sats=[];for(let i=0;i<5;i++){const m=new THREE.Mesh(i%2?new THREE.OctahedronGeometry(.16):new THREE.BoxGeometry(.22,.22,.22),new THREE.MeshBasicMaterial({color:GREEN,wireframe:true}));m.userData={a:i*1.26,r:3.5+(i%2)*.45,s:.25+i*.04,t:rings[i%2]};scene.add(m);sats.push(m)}
+/* floating dust */
+const D=mobile?60:140,dv=[];for(let i=0;i<D;i++)dv.push((Math.random()-.5)*22,(Math.random()-.5)*14,(Math.random()-.5)*8-2);
+const dg=new THREE.BufferGeometry();dg.setAttribute('position',new THREE.Float32BufferAttribute(dv,3));
+const dust=new THREE.Points(dg,new THREE.PointsMaterial({color:LIME,size:.07,map:dot,transparent:true,opacity:.7,depthWrite:false,alphaTest:.02}));scene.add(dust);
+/* red "alert" pulses on random nodes */
+const alerts=[...Array(4)].map((_,i)=>{const idx=Math.floor(Math.random()*N);
+ const c=new THREE.Mesh(new THREE.SphereGeometry(.07,12,12),new THREE.MeshBasicMaterial({color:RED}));
+ const p=new THREE.Mesh(new THREE.RingGeometry(.09,.11,32),new THREE.MeshBasicMaterial({color:RED,transparent:true,side:THREE.DoubleSide}));
+ scene.add(c,p);return{idx,c,p,o:i*.9}});
+let mx=0,my=0,tmx=0,tmy=0;
+addEventListener('pointermove',e=>{tmx=e.clientX/innerWidth-.5;tmy=e.clientY/innerHeight-.5},{passive:true});
+function size(){const w=innerWidth,h=innerHeight;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix()}
+addEventListener('resize',size);size();
+const v=new THREE.Vector3(),ease=t=>t*t*(3-2*t);
+function frame(t){t*=.001;
+ mx+=(tmx-mx)*.04;my+=(tmy-my)*.04;
+ const sc=scrollY,hh=innerHeight,p=Math.min(sc/(hh*3),1),asp=camera.aspect;
+ const k=asp<1?Math.max(.45,asp*.85):1;
+ const sx=asp<1?0:Math.min(2.9,asp*1.75);
+ globe.scale.setScalar(k*.86*(1-.15*p));
+ globe.position.x=sx*(1-ease(Math.min(sc/(hh*1.2),1))*1.9)+mx*.6;
+ globe.position.y=(asp<1?1.6:0)+sc*.0016-my*.4;
+ globe.rotation.y=t*.12+sc*.0012+mx*1.2;globe.rotation.x=.25+my*.6+Math.sin(t*.2)*.05;
+ core.rotation.y=-t*.3;core.rotation.x=t*.2;inner.rotation.y=t*.5;inner.rotation.z=t*.4;
+ rings.forEach((r,i)=>{r.rotation.z=t*(.15+i*.08)});
+ globe.updateMatrixWorld();
+ sats.forEach(m=>{const d=m.userData,a=d.a+t*d.s;v.set(Math.cos(a)*d.r,0,Math.sin(a)*d.r).applyEuler(d.t.rotation).applyMatrix4(globe.matrixWorld);m.position.copy(v);m.rotation.x=t;m.rotation.y=t*.7;m.scale.setScalar(k)});
+ alerts.forEach(a=>{v.copy(P[a.idx]).applyMatrix4(globe.matrixWorld);a.c.position.copy(v);a.p.position.copy(v);a.p.quaternion.copy(camera.quaternion);
+  const ph=((t+a.o)%2.4)/2.4;a.p.scale.setScalar(.4+ph*3*k);a.p.material.opacity=(1-ph)*.8;a.c.scale.setScalar(k*(1+.25*Math.sin(t*5+a.o)))});
+ dust.rotation.y=t*.012+sc*.0002;dust.position.y=sc*.0009;
+ canvas.style.opacity=asp<1?.38:Math.max(.32,1-sc/(hh*.9)*.68);
+ renderer.render(scene,camera)}
+if(reduce){frame(4000);addEventListener('resize',()=>frame(4000))}
+else{let on=true;document.addEventListener('visibilitychange',()=>{on=!document.hidden;if(on)requestAnimationFrame(loop)});
+ function loop(t){if(!on)return;frame(t);requestAnimationFrame(loop)}requestAnimationFrame(loop)}
+})();
+</script>
+
+</body></html>
+
+
